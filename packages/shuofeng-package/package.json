@@ -1,0 +1,56 @@
+{
+  "name": "@prifina-widgets/shuofeng-package",
+  "version": "1.0.0",
+  "description": "Prifina widgets",
+  "author": "Shuofeng Wang <shuofengwang666@gmail.com>",
+  "homepage": "https://github.com/Shuofeng-Wang/widgets#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/shuofeng-package.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shuofeng-Wang/widgets.git"
+  },
+  "scripts": {
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --out-dir ./dist/esm",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist/cjs",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --out-dir ./dist/es",
+    "storybook": "start-storybook",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@styled-system/theme-get": "^5.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "@styled-system/theme-get": "^5.1.2",
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0",
+    "styled-components": "^5.1.0",
+    "styled-system": "^5.1.5"
+  },
+  "bugs": {
+    "url": "https://github.com/Shuofeng-Wang/widgets/issues"
+  }
+}
