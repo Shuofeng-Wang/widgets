@@ -1,0 +1,383 @@
+/* Defaults */
+nav,
+header,
+section,
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+article p {
+    font-size: 35px;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Nav Bar */
+nav {
+    width: 100%;
+    margin: 0;
+    background: #1E1D1D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #F6F6F6;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+/*WSF-Code Below*/
+.headerShadow {
+    height: 5px;
+    background: rgba(30, 29, 29, 0.75);
+}
+
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: auto; /* Stay at the top */
+    left: 0;
+    /*Sidebar background color*/
+    background-color: #F6F6F6; /*  */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    margin: 20px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+
+    /*Link word's color*/
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    color: #4F4F4F;
+}
+
+/* Style page content */
+.main {
+    background: #F0F0F0;
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.rec1, .rec2 {
+    background: #44C5BB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.rec1 {
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    left: 1300px;
+    top: 120px;
+}
+
+.rec2 {
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    left: 1560px;
+    top: 120px;
+}
+
+.rec1 a, .rec2 a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    /*font-size: 12px;*/
+    /*line-height: 15px;*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+}
+
+/*WSF-Code Above*/
+
+/* Custom Styles */
+#section-1-gradient {
+    background-image: linear-gradient(#076DFF, #65A5FF);
+}
+
+div.box {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: #FFF;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15),
+    0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+div.jhuLogoIcon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, .15),
+    2px 2px 17px 2px rgba(0,0,0,1);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #0069FF;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto;
+}
+
+div.icon {
+    width: 100%;
+}
+
+div.leftSide-col {
+    margin-left: 30%;
+}
+
+div.rightSide-col {
+    margin-left: 15%;
+}
+
+h1.large {
+    color: #FFF;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
+}
+
+
+
+form h2 {
+    color: #FFF;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+footer.footsy {
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.footsy h1 {
+    color: #FFF;
+    font-size: 35px;
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li {
+    color: #FFF;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* Mobile */
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive {
+        position: relative;
+    }
+
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    h1.section2Header {
+        font-size: 50px;
+    }
+
+    article p {
+        font-size: 25px;
+    }
+
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4 {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.mobileStack {
+        width: 50%;
+        display: block;
+    }
+
+    div.box {
+        padding: 5px;
+        display: block;
+    }
+
+    div.jhuLogoIcon {
+        margin: 10px;
+    }
+
+    div.jhuLogoIcon img {
+        width: 100%;
+    }
+
+    div.leftSide-col,
+    div.rightSide-col {
+        margin: 15px;
+    }
+
+    input[type="text"] {
+        width: 350px;
+    }
+
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+
+}
