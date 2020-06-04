@@ -19,5 +19,6 @@
     "styled-components": "^5.1.0",
     "styled-system": "^5.1.5",
     "webpack": "^4.43.0"
-  }
+  },
+  "dependencies": {}
 }
